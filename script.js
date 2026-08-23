@@ -57,7 +57,7 @@ const PROJECTS = [
 },
 {
   title: "Corruption Egg - PCG",
-  subtitle: "Unreal Engine 5 · PCG · Substance Designer",
+  subtitle: "PCG · Unreal Engine 5",
   category: "technical-artist",
   thumb: "img/gokui-01.png",
   desc: `
