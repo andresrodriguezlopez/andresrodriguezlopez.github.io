@@ -23,7 +23,7 @@
 ========================================================= */
 const PROJECTS = [
   {
-  title: "Werewolf Triple Combo VFX",
+  title: "Werewolf Triple Combo - VFX",
   subtitle: "Niagara · Unreal Engine 5",
   category: "vfx-shader",
   thumb: "img/Werewolf.png",
@@ -56,7 +56,7 @@ const PROJECTS = [
      
 },
 {
-  title: "Gokui — Procedural Corruption System",
+  title: "Corruption Egg - PCG",
   subtitle: "Unreal Engine 5 · PCG · Substance Designer",
   category: "technical-artist",
   thumb: "img/gokui-01.png",
@@ -90,7 +90,7 @@ const PROJECTS = [
   ]
  },
  {
-  title: "Roller Coaster PCG",
+  title: "Roller Coaster - PCG",
   subtitle: "PCG · Unreal Engine 5",
   category: "technical-artist",
   thumb: "img/RollerCoaster.png",
