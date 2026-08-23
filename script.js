@@ -53,7 +53,42 @@ const PROJECTS = [
     { type: "video",  src: "https://player.vimeo.com/video/1203296946",  caption: "Shockwave Floor" },
     { type: "video",  src: "https://player.vimeo.com/video/1203296956",  caption: "Sphere Explosion." }
   ]
+     
 },
+{
+  title: "Gokui — Procedural Corruption System",
+  subtitle: "Unreal Engine 5 · PCG · Substance Designer",
+  category: "technical-artist",
+  thumb: "img/gokui-01.png",
+  desc: `
+    <p>A procedural system built with Unreal Engine's PCG that generates a layer of
+    organic corruption on any mesh you pick from the Content Browser. It samples points
+    across that base mesh's surface (sculpted in Houdini) and instances spheres ("eggs")
+    with random rotation and scale, controlling how much they overlap.</p>
+
+    <p>The veins connecting the corruption to the environment use pathfinding instead
+    of straight lines, with secondary branches coming off the main veins. A World Raycast
+    detects nearby walls and surfaces so veins can also spread across vertical geometry,
+    not just the ground.</p>
+
+    <p>The material is a triplanar master material with subsurface scattering, built
+    from a texture made in Substance Designer, with three instances (veins, eggs, main
+    mesh) adjustable separately. The eggs have a World Position Offset driving a
+    heartbeat-style pulse — each one calculates its own rhythm from its bounding box,
+    so they pulse asynchronously.</p>
+
+    <p>A dynamic mesh fills the gaps between eggs and veins to make the whole thing
+    feel more solid. The whole system is parametrized (vein count, branch density,
+    scale) so it can be tuned without touching the graph.</p>
+  `,
+  media: [
+    { type: "video", src: "https://player.vimeo.com/video/1220536463", caption: "Full showcase of the procedural corruption system." },
+    { type: "video", src: "https://player.vimeo.com/video/1220538653", caption: "Breakdown of the system parameters and how each part works." },
+    { type: "image", src: "img/gokui-01.jpg", caption: "Base mesh sculpted in Houdini." },
+    { type: "image", src: "img/gokui-02.jpg", caption: "Master material with subsurface scattering and triplanar projection." },
+    { type: "image", src: "img/gokui-03.jpg", caption: "Vein and branch system generated with pathfinding." } 
+  ]
+ },
  {
   title: "Roller Coaster PCG",
   subtitle: "PCG · Unreal Engine 5",
@@ -87,7 +122,8 @@ const PROJECTS = [
     { type: "image",  src: "img/PCG10.jpg",  caption: "Comparison of the foliage density and direction." },
     { type: "image",  src: "img/PCG11.jpg",  caption: "Comparison of the foliage density and direction." }
   ]
-},      
+},
+   
 {
  title: "TWW: Those We Wear",
   subtitle: "Isometric Action-adventure · Unity",
@@ -216,41 +252,6 @@ title: "Eco Ocean",
     { type: "image", src: "img/Anverso.png", caption: "This side of the card as seen through the camera." },
     { type: "video", src: "videos/VideoReverso.mp4", caption: "AR minigame side — the rocket launch starts the game, unlocking the shooter." },
     { type: "image", src: "img/Reverso.png", caption: "This side of the card as seen through the camera." }
-  ]
-},
-{
-  title: "Gokui — Procedural Corruption System",
-  subtitle: "Unreal Engine 5 · PCG · Substance Designer",
-  category: "technical-artist",
-  thumb: "img/gokui-01.png",
-  desc: `
-    <p>A procedural system built with Unreal Engine's PCG that generates a layer of
-    organic corruption on any mesh you pick from the Content Browser. It samples points
-    across that base mesh's surface (sculpted in Houdini) and instances spheres ("eggs")
-    with random rotation and scale, controlling how much they overlap.</p>
-
-    <p>The veins connecting the corruption to the environment use pathfinding instead
-    of straight lines, with secondary branches coming off the main veins. A World Raycast
-    detects nearby walls and surfaces so veins can also spread across vertical geometry,
-    not just the ground.</p>
-
-    <p>The material is a triplanar master material with subsurface scattering, built
-    from a texture made in Substance Designer, with three instances (veins, eggs, main
-    mesh) adjustable separately. The eggs have a World Position Offset driving a
-    heartbeat-style pulse — each one calculates its own rhythm from its bounding box,
-    so they pulse asynchronously.</p>
-
-    <p>A dynamic mesh fills the gaps between eggs and veins to make the whole thing
-    feel more solid. The whole system is parametrized (vein count, branch density,
-    scale) so it can be tuned without touching the graph.</p>
-  `,
-  media: [
-    { type: "video", src: "https://player.vimeo.com/video/1220536463", caption: "Full showcase of the procedural corruption system." },
-    { type: "video", src: "https://player.vimeo.com/video/1220538653", caption: "Breakdown of the system parameters and how each part works." },
-    { type: "image", src: "img/gokui-01.jpg", caption: "Base mesh sculpted in Houdini." },
-    { type: "image", src: "img/gokui-02.jpg", caption: "Master material with subsurface scattering and triplanar projection." },
-    { type: "image", src: "img/gokui-03.jpg", caption: "Vein and branch system generated with pathfinding." }
-  
   ]
 },
 ];
