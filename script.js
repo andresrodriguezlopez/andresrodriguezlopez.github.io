@@ -65,28 +65,27 @@ const PROJECTS = [
     organic corruption on any mesh you pick from the Content Browser. It samples points
     across that base mesh's surface (sculpted in Houdini) and instances spheres ("eggs")
     with random rotation and scale, controlling how much they overlap.</p>
-
     <p>The veins connecting the corruption to the environment use pathfinding instead
     of straight lines, with secondary branches coming off the main veins. A World Raycast
     detects nearby walls and surfaces so veins can also spread across vertical geometry,
     not just the ground.</p>
-
     <p>The material is a triplanar master material with subsurface scattering, built
     from a texture made in Substance Designer, with three instances (veins, eggs, main
     mesh) adjustable separately. The eggs have a World Position Offset driving a
     heartbeat-style pulse — each one calculates its own rhythm from its bounding box,
     so they pulse asynchronously.</p>
-
     <p>A dynamic mesh fills the gaps between eggs and veins to make the whole thing
     feel more solid. The whole system is parametrized (vein count, branch density,
-    scale) so it can be tuned without touching the graph.</p>
+    scale) so it can be tuned without touching the graph.</p> 
   `,
   media: [
-    { type: "video", src: "https://player.vimeo.com/video/1220536463", caption: "Full showcase of the procedural corruption system." },
-    { type: "video", src: "https://player.vimeo.com/video/1220538653", caption: "Breakdown of the system parameters and how each part works." },
-    { type: "image", src: "img/gokui-01.jpg", caption: "Base mesh sculpted in Houdini." },
-    { type: "image", src: "img/gokui-02.jpg", caption: "Master material with subsurface scattering and triplanar projection." },
-    { type: "image", src: "img/gokui-03.jpg", caption: "Vein and branch system generated with pathfinding." } 
+    { type: "video", src: "https://player.vimeo.com/video/1220536463", caption: "Breakdown of the system parameters and how each part works." },
+    { type: "video", src: "https://player.vimeo.com/video/1220538653", caption: "Full showcase of the procedural corruption system." },
+    { type: "image", src: "img/gokui-02.png", caption: "Render in a scene to see how it all looks together." },
+    { type: "image", src: "img/HoudiniAsset.png", caption: "Base mesh asset sculpted in Houdini." },
+    { type: "image", src: "img/MaterMaterialPCG.png", caption: "Master material graph driving the corrupted look." },
+    { type: "image", src: "img/PCGGraph.png", caption: "PCG Graph controlling the egg sampling and vein generation." },
+    { type: "image", src: "img/SubstanceDesginer.png", caption: "Base texture graph built in Substance Designer." }
   ]
  },
  {
