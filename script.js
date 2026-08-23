@@ -222,7 +222,7 @@ title: "Eco Ocean",
   title: "Gokui — Procedural Corruption System",
   subtitle: "Unreal Engine 5 · PCG · Substance Designer",
   category: "technical-artist",
-  thumb: "img/gokui-01.jpg",
+  thumb: "img/gokui-01.png",
   desc: `
     <p>A procedural system built with Unreal Engine's PCG that generates a layer of
     organic corruption on any mesh you pick from the Content Browser. It samples points
@@ -246,10 +246,11 @@ title: "Eco Ocean",
   `,
   media: [
     { type: "video", src: "https://player.vimeo.com/video/1220536463", caption: "Full showcase of the procedural corruption system." },
+    { type: "video", src: "https://player.vimeo.com/video/1220538653", caption: "Breakdown of the system parameters and how each part works." },
     { type: "image", src: "img/gokui-01.jpg", caption: "Base mesh sculpted in Houdini." },
     { type: "image", src: "img/gokui-02.jpg", caption: "Master material with subsurface scattering and triplanar projection." },
-    { type: "image", src: "img/gokui-03.jpg", caption: "Vein and branch system generated with pathfinding." },
-    { type: "video", src: "https://player.vimeo.com/video/1220538653", caption: "Breakdown of the system parameters and how each part works." }
+    { type: "image", src: "img/gokui-03.jpg", caption: "Vein and branch system generated with pathfinding." }
+  
   ]
 },
 ];
