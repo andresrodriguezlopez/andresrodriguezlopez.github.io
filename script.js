@@ -81,12 +81,14 @@ const PROJECTS = [
   media: [
     { type: "video", src: "https://player.vimeo.com/video/1220536463", caption: "Breakdown of the system parameters and how each part works." },
     { type: "video", src: "https://player.vimeo.com/video/1220538653", caption: "Full showcase of the procedural corruption system." },
+    { type: "image", src: "img/gokui-01.png", caption: "Render in a scene to see how it all looks together." },
     { type: "image", src: "img/gokui-02.png", caption: "Render in a scene to see how it all looks together." },
     { type: "image", src: "img/MaterialShowcase.png", caption: "A single master material driving color, detail, roughness and the heartbeat pulse — triplanar World Aligned projection (no UVs, no seams), a channel-packed ORH mask for occlusion and roughness, and Subsurface Scattering for that inner red glow, with the World Position Offset pulse offset per instance." },
     { type: "image", src: "img/PCGGraph.png", caption: "PCG Graph controlling the egg sampling and vein generation." },    
     { type: "image", src: "img/MaterMaterialPCG.png", caption: "Master material graph driving the corrupted look." },
     { type: "image", src: "img/HoudiniAsset.png", caption: "Base mesh asset sculpted in Houdini." },
-    { type: "image", src: "img/SubstanceDesginer.png", caption: "Base texture graph built in Substance Designer." }
+    { type: "image", src: "img/SubstanceDesginer.png", caption: "Base texture graph built in Substance Designer." },
+    { type: "image", src: "img/ImagenReferencia.png", caption: "Reference image used." },
   ]
  },
  {
