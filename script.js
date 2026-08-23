@@ -191,11 +191,11 @@ title: "Eco Ocean",
 },  
 {
   title: "Space Prison",
-  subtitle: " Interactive Card Vuforia AR · Unity",
+  subtitle: "Unity · Vuforia AR · Interactive Card Minigame",
   category: "videogames",
-  thumb: "img/Reverso.png",
+  thumb: "img/Anverso.png",
   desc: `
-   <p>An augmented reality minigame  built around a physical two-sided card.
+    <p>An <strong>augmented reality minigame</strong> built around a physical two-sided card.
     Using Vuforia, the camera recognizes which side of the card it's looking at and shows
     different content for each one.</p>
 
@@ -207,15 +207,49 @@ title: "Eco Ocean",
     <p>The other side works as a personal AR business card, displaying my name, contact
     email and other information directly over the card through the camera.</p>
 
-    <p>The project also runs as a standalone Android APK  — it's shown
+    <p>The project also runs as a standalone <strong>Android APK</strong> — it's shown
     here inside the Unity Editor simply for a clearer recording, but it works the same
     way on mobile.</p>
   `,
   media: [
-   { type: "video", src: "videos/VideoReverso.mp4", caption: "AR minigame side — the rocket launch starts the game, unlocking the shooter." },
-   { type: "video", src: "videos/RenderFinalAnverso.mp4", caption: "AR business card side — my name and contact details displayed over the card." },
-   { type: "image", src: "img/Reverso.png", caption: "Front side of the card being tracked in AR." },
-   { type: "image", src: "img/Anverso.png", caption: "Back side of the card being tracked in AR" }
+    { type: "video", src: "videos/RenderFinalAnverso.mp4", caption: "AR business card side — my name and contact details displayed over the card." },
+    { type: "image", src: "img/Anverso.png", caption: "This side of the card as seen through the camera." },
+    { type: "video", src: "videos/VideoReverso.mp4", caption: "AR minigame side — the rocket launch starts the game, unlocking the shooter." },
+    { type: "image", src: "img/Reverso.png", caption: "This side of the card as seen through the camera." }
+  ]
+},
+{
+  title: "Gokui — Procedural Corruption System",
+  subtitle: "Unreal Engine 5 · PCG · Substance Designer",
+  category: "technical-artist",
+  thumb: "img/gokui-01.jpg",
+  desc: `
+    <p>A procedural system built with Unreal Engine's PCG that generates a layer of
+    organic corruption on any mesh you pick from the Content Browser. It samples points
+    across that base mesh's surface (sculpted in Houdini) and instances spheres ("eggs")
+    with random rotation and scale, controlling how much they overlap.</p>
+
+    <p>The veins connecting the corruption to the environment use pathfinding instead
+    of straight lines, with secondary branches coming off the main veins. A World Raycast
+    detects nearby walls and surfaces so veins can also spread across vertical geometry,
+    not just the ground.</p>
+
+    <p>The material is a triplanar master material with subsurface scattering, built
+    from a texture made in Substance Designer, with three instances (veins, eggs, main
+    mesh) adjustable separately. The eggs have a World Position Offset driving a
+    heartbeat-style pulse — each one calculates its own rhythm from its bounding box,
+    so they pulse asynchronously.</p>
+
+    <p>A dynamic mesh fills the gaps between eggs and veins to make the whole thing
+    feel more solid. The whole system is parametrized (vein count, branch density,
+    scale) so it can be tuned without touching the graph.</p>
+  `,
+  media: [
+    { type: "video", src: "https://player.vimeo.com/video/1220536463", caption: "Full showcase of the procedural corruption system." },
+    { type: "image", src: "img/gokui-01.jpg", caption: "Base mesh sculpted in Houdini." },
+    { type: "image", src: "img/gokui-02.jpg", caption: "Master material with subsurface scattering and triplanar projection." },
+    { type: "image", src: "img/gokui-03.jpg", caption: "Vein and branch system generated with pathfinding." },
+    { type: "video", src: "https://player.vimeo.com/video/1220538653", caption: "Breakdown of the system parameters and how each part works." }
   ]
 },
 ];
