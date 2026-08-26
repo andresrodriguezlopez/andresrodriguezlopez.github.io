@@ -24,7 +24,7 @@
 const PROJECTS = [
   {
   title: "FKC: Fighting Krazy Chickens — VFX Demo Reel",
-  subtitle: "Particle System · Shader Graph · Unity",
+  subtitle: "Particle System · Unity",
   category: "vfx-shader",
   thumb: "img/KeyArt.png",
   desc: `
@@ -33,14 +33,13 @@ const PROJECTS = [
 
     <p>The reel covers a selection of gameplay VFX built with <strong>Unity's Particle System
     and Shader Graph</strong>, including combat hits, abilities, environmental feedback and
-    character effects — all designed for real-time performance.</p>
+    character effects — all real-time performance.</p>
 
     <p>This is not the full scope of VFX work done for the project, but a curated cut
     to demonstrate the style, technical approach and variety of effects developed so far.</p>
   `,
   media: [
-    { type: "video", src: "https://player.vimeo.com/video/1221467096", caption: "Full VFX demo reel — a selection of real-time effects created for FKC." },
-    { type: "image", src: "img/KeyArt.png", caption: "FKC: Fighting Krazy Chickens! — Key Art." }
+    { type: "video", src: "https://player.vimeo.com/video/1221467096", caption: "VFX demo reel — a selection of real-time effects created for FKC." }
   ]
 },
   {
