@@ -33,7 +33,7 @@ const PROJECTS = [
 
     <p>The reel covers a selection of gameplay VFX built with <strong>Unity's Particle System
     and Shader Graph</strong>, including combat hits, abilities, environmental feedback and
-    character effects — all real-time performance.</p>
+    character effects.</p>
 
     <p>This is not the full scope of VFX work done for the project, but a curated cut
     to demonstrate the style, technical approach and variety of effects developed so far.</p>
