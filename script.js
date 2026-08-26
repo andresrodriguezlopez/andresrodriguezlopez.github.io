@@ -26,7 +26,7 @@ const PROJECTS = [
   title: "FKC: Fighting Krazy Chickens — VFX Demo Reel",
   subtitle: "Particle System · Shader Graph · Unity",
   category: "vfx-shader",
-  thumb: "videos/KeyArt.png",
+  thumb: "img/KeyArt.png",
   desc: `
     <p>A <strong>VFX demo reel</strong> showcasing the real-time visual effects I created
     for <strong>FKC: Fighting Krazy Chickens!</strong> at Sunblind Games.</p>
@@ -40,7 +40,7 @@ const PROJECTS = [
   `,
   media: [
     { type: "video", src: "https://player.vimeo.com/video/1221467096", caption: "Full VFX demo reel — a selection of real-time effects created for FKC." },
-    { type: "image", src: "videos/KeyArt.png", caption: "FKC: Fighting Krazy Chickens! — Key Art." }
+    { type: "image", src: "img/KeyArt.png", caption: "FKC: Fighting Krazy Chickens! — Key Art." }
   ]
 },
   {
