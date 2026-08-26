@@ -23,6 +23,27 @@
 ========================================================= */
 const PROJECTS = [
   {
+  title: "FKC: Fighting Krazy Chickens — VFX Demo Reel",
+  subtitle: "Particle System · Shader Graph · Unity",
+  category: "vfx-shader",
+  thumb: "videos/KeyArt.png",
+  desc: `
+    <p>A <strong>VFX demo reel</strong> showcasing the real-time visual effects I created
+    for <strong>FKC: Fighting Krazy Chickens!</strong> at Sunblind Games.</p>
+
+    <p>The reel covers a selection of gameplay VFX built with <strong>Unity's Particle System
+    and Shader Graph</strong>, including combat hits, abilities, environmental feedback and
+    character effects — all designed for real-time performance.</p>
+
+    <p>This is not the full scope of VFX work done for the project, but a curated cut
+    to demonstrate the style, technical approach and variety of effects developed so far.</p>
+  `,
+  media: [
+    { type: "video", src: "https://player.vimeo.com/video/1221467096", caption: "Full VFX demo reel — a selection of real-time effects created for FKC." },
+    { type: "image", src: "videos/KeyArt.png", caption: "FKC: Fighting Krazy Chickens! — Key Art." }
+  ]
+},
+  {
   title: "Werewolf Triple Combo - VFX",
   subtitle: "Niagara · Unreal Engine 5",
   category: "vfx-shader",
